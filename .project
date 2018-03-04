@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>RegisterAPI-Java</name>
+=======
+	<name>registerservice</name>
+>>>>>>> de29f3af9dec63ce0f5b25edbb9a47740fe7e7c0
 	<comment></comment>
 	<projects>
 	</projects>

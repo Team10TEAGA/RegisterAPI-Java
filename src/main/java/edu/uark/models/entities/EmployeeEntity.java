@@ -12,7 +12,10 @@ import edu.uark.dataaccess.entities.BaseEntity;
 import edu.uark.dataaccess.repository.DatabaseTable;
 import edu.uark.models.api.Employee;
 import edu.uark.models.api.Product;
+<<<<<<< HEAD
 import edu.uark.models.entities.fieldnames.EmployeeFieldNames;
+=======
+>>>>>>> de29f3af9dec63ce0f5b25edbb9a47740fe7e7c0
 import edu.uark.models.entities.fieldnames.ProductFieldNames;
 
 public class EmployeeEntity extends BaseEntity<EmployeeEntity> 
@@ -53,17 +56,23 @@ public class EmployeeEntity extends BaseEntity<EmployeeEntity>
 	@Override
 	protected void fillFromRecord(ResultSet rs) throws SQLException 
 	{
+<<<<<<< HEAD
 		this.firstname = rs.getString(EmployeeFieldNames.FIRST_NAME);
 		this.lastname = rs.getString(EmployeeFieldNames.LAST_NAME);
 		this.active = rs.getBoolean(EmployeeFieldNames.ACTIVE);
 		this.role = rs.getString(EmployeeFieldNames.ROLE);
 		this.manager = rs.getString(EmployeeFieldNames.MANAGER);
 		this.password = rs.getString(EmployeeFieldNames.PASSWORD);
+=======
+		//this.lookupCode = rs.getString(some column);
+		//this.firstname = rs.getString();
+>>>>>>> de29f3af9dec63ce0f5b25edbb9a47740fe7e7c0
 	}
 
 	@Override
 	protected Map<String, Object> fillRecord(Map<String, Object> record) 
 	{
+<<<<<<< HEAD
 		record.put(EmployeeFieldNames.FIRST_NAME, this.firstname);
 		record.put(EmployeeFieldNames.LAST_NAME, this.lastname);
 		record.put(EmployeeFieldNames.ACTIVE, this.active);
@@ -162,4 +171,9 @@ public class EmployeeEntity extends BaseEntity<EmployeeEntity>
 		}
 		return this;
 	}
+=======
+		return null;
+	}
+	
+>>>>>>> de29f3af9dec63ce0f5b25edbb9a47740fe7e7c0
 }
